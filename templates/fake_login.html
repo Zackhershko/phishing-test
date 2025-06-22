@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Xoltar Admin Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #EB2F87;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        h2 {
+            color: #AB3191;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .notice {
+            background: #f8e5f0;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #6C3E97;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #5B3995;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            background: #503693;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #6C3E97;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #AB3191;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">XOLTAR</div>
+        <div class="notice">
+            🔔 New Admin System POC - Please register your credentials for the updated administrative portal.
+            <br><br>
+            As part of our security infrastructure upgrade, we are migrating all user accounts to our new authentication system. This registration is required to maintain access to administrative functions.
+            <br><br>
+            - Zachy
+        </div>
+        <h2>Admin Portal Registration</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Corporate Email</label>
+                <input type="email" id="email" name="email" placeholder="name@xoltar.com" required>
+            </div>
+            <div class="form-group">
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" name="current-password" placeholder="Enter your current password" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Enter your new password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm New Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your new password" required>
+            </div>
+            <button type="submit">Register for New Admin System</button>
+        </form>
+        <div class="footer">
+            Protected by Xoltar Security • System Version 2.4.1
+        </div>
+    </div>
+</body>
+</html>
