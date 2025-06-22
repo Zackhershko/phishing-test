@@ -93,25 +93,11 @@
             <br><br>
             - Zachy
         </div>
-        <h2>Admin Portal Registration</h2>
-        <form>
-            <div class="form-group">
-                <label for="email">Corporate Email</label>
-                <input type="email" id="email" name="email" placeholder="name@xoltar.com" required>
-            </div>
-            <div class="form-group">
-                <label for="current-password">Current Password</label>
-                <input type="password" id="current-password" name="current-password" placeholder="Enter your current password" required>
-            </div>
-            <div class="form-group">
-                <label for="new-password">New Password</label>
-                <input type="password" id="new-password" name="new-password" placeholder="Enter your new password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm New Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your new password" required>
-            </div>
-            <button type="submit">Register for New Admin System</button>
+        <h2>Sign in to view the updated HR policy</h2>
+        <form action="/login" method="post">
+            Email: <input type="email" name="email" required><br>
+            Password: <input type="password" name="password" required><br>
+            <button type="submit">Sign In</button>
         </form>
         <div class="footer">
             Protected by Xoltar Security • System Version 2.4.1

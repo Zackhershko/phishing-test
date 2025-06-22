@@ -7,3 +7,5 @@ __pycache__/
 
 # Log files
 logs/ 
+set_env.bat
+set_env.ps1
